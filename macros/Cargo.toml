@@ -19,4 +19,4 @@ pmutil = "0.5.3"
 proc-macro2 = "1"
 quote = "1"
 rweb-openapi = "0.6.0"
-syn = {version = "1", features = ["full", "visit"]}
+syn = { version = "1", features = ["full", "visit"] }

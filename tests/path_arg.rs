@@ -1,7 +1,7 @@
 #![cfg(not(feature = "openapi"))]
 
-use http::Error;
 use rweb::{get, Filter};
+use warp::http::Error;
 
 #[get("/")]
 fn index() -> Result<String, Error> {

@@ -1,5 +1,5 @@
-use http::StatusCode;
 use rweb::*;
+use warp::http::StatusCode;
 
 #[get("/sum/{a}/{b}")]
 fn sum(a: usize, b: usize) -> String {

@@ -1,8 +1,8 @@
 #![cfg(not(feature = "openapi"))]
 
-use http::Error;
 use rweb::*;
 use serde::{Deserialize, Serialize};
+use warp::http::Error;
 
 #[derive(Serialize, Deserialize)]
 struct LoginForm {

@@ -1,8 +1,8 @@
 #![cfg(not(feature = "openapi"))]
 
-use http::StatusCode;
 use rweb::{filters::BoxedFilter, *};
 use serde::Deserialize;
+use warp::http::StatusCode;
 
 impl FromRequest for User {
     type Filter = BoxedFilter<(User,)>;

@@ -693,10 +693,10 @@ impl ResponseEntity for Rejection {
     }
 }
 
-type HttpError = http::Error;
+type HttpError = warp::http::Error;
 delegate_entity!(HttpError => ());
 
-impl ResponseEntity for http::Error {
+impl ResponseEntity for warp::http::Error {
     fn describe_responses(_: &mut ComponentDescriptor) -> Responses {
         Default::default()
     }

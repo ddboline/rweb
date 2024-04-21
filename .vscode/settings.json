@@ -3,5 +3,8 @@
   "[rust]": {
     "editor.formatOnSave": true
   },
-  "rust-analyzer.cargo.allFeatures": true
+  "rust-analyzer.cargo.allFeatures": true,
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "master"
+  ]
 }

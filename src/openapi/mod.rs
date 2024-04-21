@@ -214,11 +214,11 @@ pub use self::{
     entity::{ComponentDescriptor, Entity, ResponseEntity, Responses},
 };
 use crate::FromRequest;
-use http::Method;
 use indexmap::IndexMap;
 pub use rweb_openapi::v3_0::*;
 use scoped_tls::scoped_thread_local;
 use std::{borrow::Cow, cell::RefCell, mem::replace};
+use warp::http::Method;
 
 mod builder;
 mod entity;
@@ -425,7 +425,7 @@ where
 /// I'm too lazy to use inflector.
 #[doc(hidden)]
 pub mod http_methods {
-    use http::Method;
+    use warp::http::Method;
 
     pub const fn get() -> Method {
         Method::GET
